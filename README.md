@@ -1,6 +1,6 @@
 # HaJunHyun.github.io
 
-Personal academic website built from the official [al-folio](https://github.com/alshedivat/al-folio) starter.
+Junhyun Ha's academic website, built from the official [al-folio](https://github.com/alshedivat/al-folio) starter.
 
 The original al-folio design, theme runtime, and pinned dependencies are preserved. Only personal configuration and content have been changed.
 
@@ -15,11 +15,12 @@ The original al-folio design, theme runtime, and pinned dependencies are preserv
 - `_pages/about.md`: introduction and profile
 - `_data/socials.yml`: verified contact links
 - `_projects/`: public GitHub projects
-- `_bibliography/papers.bib`: publications, currently empty
+- `_bibliography/papers.bib`: publications, including PReFlow
 - `_drafts/research-note.md`: an unpublished Distill-style writing template
-- `_posts/`: create this folder when publishing the first post
+- `_posts/2026-10-01-preflow.md`: PReFlow research explainer with equations and original paper figures
 
-No affiliation, email address, CV, or publications have been invented. The profile image is the public GitHub avatar.
+Name and affiliation come from the official SIML people page. Publication metadata and figures follow arXiv:2609.36812v1.
+See [content sources](docs/CONTENT_SOURCES.md) for provenance.
 
 ## Build
 

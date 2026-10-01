@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: ""
+subtitle: M.S. student · KAIST AI
 
 profile:
   align: right
@@ -10,7 +10,7 @@ profile:
   image_circular: false
   more_info: ""
 
-selected_papers: false
+selected_papers: true
 social: true
 
 announcements:
@@ -24,8 +24,12 @@ latest_posts:
   limit: 3
 ---
 
-Welcome to my personal academic website. I use this space to share research, projects, and technical notes.
+I am a master's student at the [Kim Jaechul Graduate School of AI, KAIST](https://gsai.kaist.ac.kr/), advised by
+[Prof. Juho Lee](https://juho-lee.github.io/). I am a member of the
+[Statistical Inference & Machine Learning (SIML)](https://siml.kaist.ac.kr/) lab.
 
-You can find my public repositories on [GitHub](https://github.com/HaJunHyun).
+My recent work studies how to improve diffusion and flow policies for **offline and offline-to-online reinforcement learning**.
+In [PReFlow](https://arxiv.org/abs/2609.36812), we learn expressive action refinements conditioned on proposals from a behavior policy.
 
-<!-- Add your actual name, affiliation, research interests, and biography here. -->
+Read the [research explainer]({% post_url 2026-10-01-preflow %}) for the ideas, equations, and experiments behind PReFlow.
+My public projects are on [GitHub](https://github.com/HaJunHyun).

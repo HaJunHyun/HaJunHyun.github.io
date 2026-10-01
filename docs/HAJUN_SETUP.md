@@ -1,12 +1,13 @@
-# HaJunHyun의 al-folio 홈페이지
+# Junhyun Ha의 al-folio 홈페이지
 
 공식 [al-folio](https://github.com/alshedivat/al-folio) 원본을 사용했습니다. 기본 색상, 글꼴, 레이아웃, 다크 모드는 변경하지 않았습니다.
 
 - 원본 커밋: `40c06007dab344970b681ba63b2241b1a8209ec1`
 - 목표 저장소: `HaJunHyun/HaJunHyun.github.io`
 - 목표 주소: `https://hajunhyun.github.io/`
-- 공개 프로필에서 확인된 사용자명과 GitHub 아바타를 사용했습니다.
-- 소속, 이메일, CV, 연구 분야와 논문은 추측해서 넣지 않았습니다.
+- SIML에서 확인한 영문 이름과 KAIST AI 석사과정 소속을 반영했습니다.
+- PReFlow 논문을 Publications와 홈페이지에 추가하고, 영어 연구 해설을 `/blog/preflow/`에 작성했습니다.
+- 프로필과 논문 그림의 출처는 [CONTENT_SOURCES.md](CONTENT_SOURCES.md)에 기록했습니다.
 - Projects에는 공개 저장소 `diffusion_rl`, `cvsg`, `KAIRI_MCD`를 연결했습니다.
 
 ## GitHub에 게시하기
@@ -47,13 +48,17 @@
 
 이름을 바꿀 때 `url`과 `repository`의 GitHub 사용자명은 그대로 유지하세요. 개인 홈페이지이므로 `baseurl: ""`도 그대로 둡니다.
 
-논문을 추가한 뒤 홈페이지에도 표시하려면 `_pages/about.md`의 `selected_papers`를 `true`로 바꾸고 해당 BibTeX 항목에 `selected={true}`를 넣으세요. Publications 페이지의 빈 목록 안내 문장도 지우면 됩니다.
+홈페이지의 논문 표시는 이미 활성화되어 있습니다. 새 논문을 추가할 때도 홈페이지에 표시하려면 해당 BibTeX 항목에 `selected={true}`를 넣으세요.
 
-CV와 소속은 실제 정보가 준비되면 추가할 수 있습니다. 상단 메뉴는 기본 al-folio의 about, blog, publications, projects 구성입니다.
+CV는 실제 정보가 준비되면 추가할 수 있습니다. 상단 메뉴는 기본 al-folio의 about, blog, publications, projects 구성입니다.
 
 ## 연구 글 쓰기
 
 `_drafts/research-note.md`에 al-folio의 **Distill 글 양식**을 넣었습니다. 이 초안은 기본 배포에 포함되지 않습니다.
+
+현재 게시된 글은 `_posts/2026-10-01-preflow.md`입니다. 이 파일을 GitHub에서 수정하면 논문 해설을 바로 고칠 수 있습니다.
+그림은 `assets/img/preflow/`와 `assets/img/publication_preview/preflow.png`에,
+글의 참고문헌은 `assets/bibliography/preflow.bib`에 있습니다.
 
 1. 제목, 요약과 본문을 실제 연구 내용으로 바꾸세요.
 2. `_posts/YYYY-MM-DD-your-title.md`로 옮기세요. 날짜를 실제 게시 날짜로 바꾸세요.
@@ -87,7 +92,7 @@ bundle exec jekyll serve
 
 ## 이 패키지의 검증 상태
 
-설정·콘텐츠 문법, Prettier, 기본 테마 구조 검사, al-folio upgrade audit를 통과했습니다. 생성된 8개 HTML 페이지에서 필요한 경로와 내부 링크·로컬 에셋을 확인했고, 예시 인물의 정보가 남지 않았는지도 검사했습니다.
+초기 사이트의 설정·콘텐츠 문법, Prettier, 기본 테마 구조 검사, al-folio upgrade audit를 통과했습니다. 초기 8개 HTML 페이지의 내부 링크와 로컬 에셋을 확인했습니다.
 
 이 실행 환경에서는 기본 Sass 네이티브 바이너리가 스레드 정보를 읽지 못했습니다. 사이트 소스와 의존성 버전을 유지한 채, 검증 과정에서만 동일 버전인 Sass 1.100.0의 JavaScript 컴파일러를 사용해 사이트 생성을 확인했습니다. 이 검증용 어댑터는 패키지에 포함하지 않았고, GitHub에서는 원본 배포 워크플로를 사용합니다.
 

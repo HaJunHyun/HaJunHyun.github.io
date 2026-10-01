@@ -44,14 +44,13 @@
 | GitHub, 이메일, Scholar, CV 링크 | `_data/socials.yml`           |
 | 프로필 사진                      | `_pages/about.md`의 `profile` |
 | 실제 논문 목록                   | `_bibliography/papers.bib`    |
-| 프로젝트                         | `_projects/`                  |
 | 연구 글                          | `_posts/`                     |
 
 이름을 바꿀 때 `url`과 `repository`의 GitHub 사용자명은 그대로 유지하세요. 개인 홈페이지이므로 `baseurl: ""`도 그대로 둡니다.
 
 홈페이지의 논문 표시는 이미 활성화되어 있습니다. 새 논문을 추가할 때도 홈페이지에 표시하려면 해당 BibTeX 항목에 `selected={true}`를 넣으세요.
 
-CV는 실제 정보가 준비되면 추가할 수 있습니다. 상단 메뉴는 기본 al-folio의 about, blog, publications, projects 구성입니다.
+CV는 실제 정보가 준비되면 추가할 수 있습니다. 상단 메뉴는 about, blog, publications 구성입니다.
 
 ## 연구 글 쓰기
 

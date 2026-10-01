@@ -7,7 +7,9 @@ Verified on October 1, 2026.
 - [SIML people](https://siml.kaist.ac.kr/people/): Junhyun Ha, MS student, `junhyunha@kaist.ac.kr`.
 - [SIML](https://siml.kaist.ac.kr/): lab name and KAIST AI affiliation.
 - [Juho Lee](https://juho-lee.github.io/): advisor homepage; the advising relationship was also supplied by the site owner.
-- The homepage omits a profile image at the site owner's request.
+- The homepage uses Gravatar's existing `mp` (mystery-person) default avatar, a white silhouette on a gray background.
+- [Avatar documentation](https://docs.gravatar.com/sdk/images/#default-image) and [image source](https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y&s=512).
+- The image is stored unchanged as `assets/img/avatar-default.jpg`.
 
 ## Publication and explainer
 

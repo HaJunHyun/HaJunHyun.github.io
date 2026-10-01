@@ -6,7 +6,7 @@
 - 목표 저장소: `HaJunHyun/HaJunHyun.github.io`
 - 목표 주소: `https://hajunhyun.github.io/`
 - SIML에서 확인한 영문 이름, KAIST AI 석사과정 소속과 공개 이메일을 반영했습니다.
-- 프로필 사진 없이 자기소개를 표시하도록 `profile: false`를 설정했습니다.
+- 프로필에는 Gravatar의 기본 사람 실루엣 아바타를 사용합니다. 파일은 `assets/img/avatar-default.jpg`입니다.
 - PReFlow 논문을 Publications와 홈페이지에 추가하고, 영어 연구 해설을 `/blog/preflow/`에 작성했습니다.
 - 프로필과 논문 그림의 출처는 [CONTENT_SOURCES.md](CONTENT_SOURCES.md)에 기록했습니다.
 - Projects에는 공개 저장소 `diffusion_rl`, `cvsg`, `KAIRI_MCD`를 연결했습니다.
@@ -54,6 +54,32 @@
 CV는 실제 정보가 준비되면 추가할 수 있습니다. 상단 메뉴는 기본 al-folio의 about, blog, publications, projects 구성입니다.
 
 ## 연구 글 쓰기
+
+### GitHub에서 현재 글 수정하기
+
+1. [PReFlow 글 파일](https://github.com/HaJunHyun/HaJunHyun.github.io/blob/main/_posts/2026-10-01-preflow.md)을 엽니다.
+2. GitHub에 로그인한 상태에서 파일 위의 **연필 아이콘(Edit this file)**을 누릅니다.
+3. 아래 안내에 따라 원하는 내용을 고칩니다.
+4. **Commit changes…**를 누르고 수정 내용을 짧게 적은 뒤, **Commit directly to the main branch**로 저장합니다.
+5. **Actions → Deploy site**와 이어지는 **pages build and deployment**가 성공하면 홈페이지에 자동 반영됩니다.
+
+| 바꾸려는 내용        | 수정할 곳                 |
+| -------------------- | ------------------------- |
+| 글 제목              | 맨 위의 `title:`          |
+| 제목 아래 한 줄 소개 | `description:`            |
+| 본문                 | 두 번째 `---` 아래의 글   |
+| 소제목               | `## Overview` 같은 줄     |
+| 왼쪽 목차            | 맨 위 `toc:`의 `name:` 값 |
+
+소제목을 바꾸면 `toc`의 이름도 똑같이 바꿔야 목차 링크가 맞습니다.
+일반 문장만 고칠 때는 `layout`, `date`, `bibliography`, `authors`와 파일명을 그대로 두면 됩니다.
+
+본문은 Markdown입니다. `**중요한 내용**`은 굵게, `[링크 이름](https://example.com)`은 링크가 됩니다.
+수식은 기존 글처럼 `$$ ... $$` 안에 씁니다.
+그림 설명은 해당 그림의 `<figcaption>`과 `</figcaption>` 사이를 수정하세요.
+GitHub의 **Preview**는 기본 Markdown 확인용이고, 수식·그림·목차의 최종 모양은 배포된 홈페이지에서 확인하면 됩니다.
+
+### 새 연구 글 추가하기
 
 `_drafts/research-note.md`에 al-folio의 **Distill 글 양식**을 넣었습니다. 이 초안은 기본 배포에 포함되지 않습니다.
 

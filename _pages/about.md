@@ -4,7 +4,11 @@ title: about
 permalink: /
 subtitle: M.S. student · KAIST AI
 
-profile: false
+profile:
+  align: right
+  image: avatar-default.jpg
+  image_circular: false
+  more_info: ""
 
 selected_papers: true
 social: true

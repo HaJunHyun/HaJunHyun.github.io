@@ -19,7 +19,7 @@ The original al-folio design, theme runtime, and pinned dependencies are preserv
 - `_drafts/research-note.md`: an unpublished Distill-style writing template
 - `_posts/2026-10-01-preflow.md`: PReFlow research explainer with equations and original paper figures
 
-Profile information comes from the official SIML people page. The homepage uses a text-only introduction without a profile image.
+Profile information comes from the official SIML people page. The homepage uses Gravatar's standard white silhouette avatar.
 Publication metadata and figures follow arXiv:2609.36812v1.
 See [content sources](docs/CONTENT_SOURCES.md) for provenance.
 

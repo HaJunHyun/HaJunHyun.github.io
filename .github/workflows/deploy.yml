@@ -59,6 +59,7 @@ on:
 
 permissions:
   contents: write
+  pages: write
 
 jobs:
   deploy:
@@ -101,8 +102,20 @@ jobs:
         run: |
           npm install -g purgecss
           purgecss -c purgecss.config.js
+          touch _site/.nojekyll
       - name: Deploy 🚀
         if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: _site
+      - name: Request GitHub Pages publication
+        if: github.event_name != 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          pages_branch="$(gh api "repos/${GITHUB_REPOSITORY}/pages" --jq '.source.branch // ""')"
+          if [ "$pages_branch" = "gh-pages" ]; then
+            gh api --method POST "repos/${GITHUB_REPOSITORY}/pages/builds" --jq '"Pages build: " + .status'
+          else
+            echo "::notice::Open Settings > Pages and select Deploy from a branch, gh-pages, / (root)."
+          fi

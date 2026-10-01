@@ -19,7 +19,9 @@
 2. **Settings → Pages → Build and deployment**에서 **Deploy from a branch**, 브랜치 **gh-pages**, 폴더 **/ (root)**를 선택하고 **Save**를 누르세요.
 3. Pages 배포가 끝나면 `https://hajunhyun.github.io/`를 확인하세요.
 
-배포 워크플로에 필요한 `contents: write` 권한은 `.github/workflows/deploy.yml`에 선언되어 있습니다. 이 사이트를 위해 계정 전체의 권한을 바꿀 필요는 없습니다.
+배포 워크플로에 필요한 `contents: write`, `pages: write` 권한은 `.github/workflows/deploy.yml`에 선언되어 있습니다. 이 사이트를 위해 계정 전체의 권한을 바꿀 필요는 없습니다.
+
+원본 al-folio 빌드 과정에 두 가지 게시 처리를 추가했습니다. 완성된 파일에 `.nojekyll`을 넣어 GitHub가 다시 Jekyll을 실행하지 않게 하고, `gh-pages` 갱신 후 Pages 게시를 명시적으로 요청합니다. GitHub Actions의 기본 토큰으로 만든 커밋은 Pages 빌드를 자동으로 시작하지 않기 때문에 필요한 처리입니다. 최초 한 번은 위의 Pages 설정을 저장해야 합니다.
 
 `gh-pages`가 아직 없다면 먼저 `Deploy site`를 실행하거나 실패 로그를 확인하세요. `main` 브랜치를 Pages의 게시 소스로 고르면 원본 Markdown이 제대로 빌드되지 않습니다.
 
@@ -78,7 +80,7 @@ bundle exec jekyll serve
 
 - 예시 인물의 논문, CV, 연락처, 사진과 데모 글을 제거했습니다.
 - 외부 블로그 가져오기를 비활성화했습니다.
-- 소스 프로젝트의 정기 유지보수 워크플로를 제거하고 공식 `Deploy site` 워크플로를 유지했습니다.
+- 소스 프로젝트의 정기 유지보수 워크플로를 제거하고 공식 `Deploy site`의 빌드 과정을 유지했습니다. 이 사이트의 자동 게시를 위해 `.nojekyll` 생성과 Pages 게시 요청만 추가했습니다.
 - 개인 사이트에 쓰이지 않는 원본의 README 미리보기 이미지와 Lighthouse 성능 보고서는 제외했습니다.
 - 레이아웃, CSS, 테마 플러그인과 고정된 의존성 버전은 유지했습니다.
 - 사용한 원본의 MIT 라이선스는 `LICENSE`에 포함되어 있습니다.
@@ -90,3 +92,5 @@ bundle exec jekyll serve
 이 실행 환경에서는 기본 Sass 네이티브 바이너리가 스레드 정보를 읽지 못했습니다. 사이트 소스와 의존성 버전을 유지한 채, 검증 과정에서만 동일 버전인 Sass 1.100.0의 JavaScript 컴파일러를 사용해 사이트 생성을 확인했습니다. 이 검증용 어댑터는 패키지에 포함하지 않았고, GitHub에서는 원본 배포 워크플로를 사용합니다.
 
 실제 빌드 결과는 저장소의 **Actions → Deploy site**, 게시 여부는 **Settings → Pages**에서 확인할 수 있습니다.
+
+2026-10-01에 GitHub Actions에서도 기본 Sass 컴파일러로 al-folio 빌드가 성공했고, `gh-pages`에 8개 HTML 페이지가 생성된 것을 확인했습니다.

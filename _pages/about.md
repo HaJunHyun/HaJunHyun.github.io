@@ -6,7 +6,7 @@ subtitle: M.S. student · KAIST AI
 
 profile:
   align: right
-  image: profile.png
+  image: junhyun-ha.jpg
   image_circular: false
   more_info: ""
 

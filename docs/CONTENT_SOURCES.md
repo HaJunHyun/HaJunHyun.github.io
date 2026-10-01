@@ -4,9 +4,10 @@ Verified on October 1, 2026.
 
 ## Profile
 
-- [SIML people](https://siml.kaist.ac.kr/people/): Junhyun Ha, MS student.
+- [SIML people](https://siml.kaist.ac.kr/people/): Junhyun Ha, MS student, `junhyunha@kaist.ac.kr`.
 - [SIML](https://siml.kaist.ac.kr/): lab name and KAIST AI affiliation.
 - [Juho Lee](https://juho-lee.github.io/): advisor homepage; the advising relationship was also supplied by the site owner.
+- [Portrait](https://siml.kaist.ac.kr/image/people/jhha.jpg): copied unchanged to `assets/img/junhyun-ha.jpg`.
 
 ## Publication and explainer
 

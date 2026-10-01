@@ -39,7 +39,12 @@
 .highlight .cp {
   color: #cd2828;
   font-weight: bold;
-} /* Comment.Preproc */ /* Comment.Single */ /* Comment.Special */ /* Generic.Deleted */
+} /* Comment.Preproc */ /* Comment.Single */
+.highlight .cs {
+  color: #e50808;
+  font-weight: bold;
+  background-color: #520000;
+} /* Comment.Special */ /* Generic.Deleted */
 .highlight .ge {
   color: #d0d0d0;
   font-style: italic;
@@ -52,7 +57,11 @@
 } /* Generic.Output */ /* Generic.Prompt */ /* Generic.Strong */ /* Generic.Subheading */
 .highlight .gt {
   color: #d22323;
-} /* Generic.Traceback */ /* Keyword.Constant */ /* Keyword.Declaration */ /* Keyword.Namespace */ /* Keyword.Pseudo */ /* Keyword.Reserved */ /* Keyword.Type */ /* Literal.Date */
+} /* Generic.Traceback */ /* Keyword.Constant */ /* Keyword.Declaration */ /* Keyword.Namespace */ /* Keyword.Pseudo */
+.highlight .kr {
+  color: #6ab825;
+  font-weight: bold;
+} /* Keyword.Reserved */ /* Keyword.Type */ /* Literal.Date */
 .highlight .m {
   color: #3677a9;
 } /* Literal.Number */
@@ -90,7 +99,10 @@
 .highlight .nt {
   color: #6ab825;
   font-weight: bold;
-} /* Name.Tag */ /* Name.Variable */ /* Operator.Word */
+} /* Name.Tag */
+.highlight .nv {
+  color: #40ffff;
+} /* Name.Variable */ /* Operator.Word */
 .highlight .w {
   color: #666666;
 } /* Text.Whitespace */ /* Literal.Number.Float */ /* Literal.Number.Hex */

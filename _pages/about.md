@@ -4,11 +4,7 @@ title: about
 permalink: /
 subtitle: M.S. student · KAIST AI
 
-profile:
-  align: right
-  image: junhyun-ha.jpg
-  image_circular: false
-  more_info: ""
+profile: false
 
 selected_papers: true
 social: true

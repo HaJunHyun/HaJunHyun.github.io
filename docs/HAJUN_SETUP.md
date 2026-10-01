@@ -5,7 +5,8 @@
 - 원본 커밋: `40c06007dab344970b681ba63b2241b1a8209ec1`
 - 목표 저장소: `HaJunHyun/HaJunHyun.github.io`
 - 목표 주소: `https://hajunhyun.github.io/`
-- SIML에서 확인한 영문 이름, KAIST AI 석사과정 소속, 공개 이메일과 프로필 사진을 반영했습니다.
+- SIML에서 확인한 영문 이름, KAIST AI 석사과정 소속과 공개 이메일을 반영했습니다.
+- 프로필 사진 없이 자기소개를 표시하도록 `profile: false`를 설정했습니다.
 - PReFlow 논문을 Publications와 홈페이지에 추가하고, 영어 연구 해설을 `/blog/preflow/`에 작성했습니다.
 - 프로필과 논문 그림의 출처는 [CONTENT_SOURCES.md](CONTENT_SOURCES.md)에 기록했습니다.
 - Projects에는 공개 저장소 `diffusion_rl`, `cvsg`, `KAIRI_MCD`를 연결했습니다.
@@ -36,15 +37,15 @@
 
 ## 본인 정보 수정하기
 
-| 내용                             | 수정할 파일                 |
-| -------------------------------- | --------------------------- |
-| 표시 이름, 사이트 설명, 주소     | `_config.yml`               |
-| 자기소개, 소속, 관심 분야        | `_pages/about.md`           |
-| GitHub, 이메일, Scholar, CV 링크 | `_data/socials.yml`         |
-| 프로필 사진                      | `assets/img/junhyun-ha.jpg` |
-| 실제 논문 목록                   | `_bibliography/papers.bib`  |
-| 프로젝트                         | `_projects/`                |
-| 연구 글                          | `_posts/`                   |
+| 내용                             | 수정할 파일                   |
+| -------------------------------- | ----------------------------- |
+| 표시 이름, 사이트 설명, 주소     | `_config.yml`                 |
+| 자기소개, 소속, 관심 분야        | `_pages/about.md`             |
+| GitHub, 이메일, Scholar, CV 링크 | `_data/socials.yml`           |
+| 프로필 사진                      | `_pages/about.md`의 `profile` |
+| 실제 논문 목록                   | `_bibliography/papers.bib`    |
+| 프로젝트                         | `_projects/`                  |
+| 연구 글                          | `_posts/`                     |
 
 이름을 바꿀 때 `url`과 `repository`의 GitHub 사용자명은 그대로 유지하세요. 개인 홈페이지이므로 `baseurl: ""`도 그대로 둡니다.
 

@@ -24,7 +24,7 @@ latest_posts:
   limit: 3
 ---
 
-I am a master's student at the [Kim Jaechul Graduate School of AI, KAIST](https://gsai.kaist.ac.kr/), advised by
+Hi! I am a master's student at the [Kim Jaechul Graduate School of AI, KAIST](https://gsai.kaist.ac.kr/), advised by
 [Prof. Juho Lee](https://juho-lee.github.io/). I am a member of the
 [Statistical Inference & Machine Learning (SIML)](https://siml.kaist.ac.kr/) lab. Before joining KAIST, I received my B.S. in Statistics from Seoul National University in 2025.
 

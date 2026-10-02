@@ -13,8 +13,8 @@ footer_text: >
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 keywords: Junhyun Ha, KAIST, SIML, reinforcement learning, diffusion policies, flow matching, PReFlow
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
-apple_touch_icon: # image name in /assets/img/ (or a rooted path / absolute URL) used for iOS home-screen bookmarks; needs a real 180x180 PNG, since Safari ignores the emoji favicon above. Left empty, iOS falls back to a screenshot of the page.
+icon: favicon-h.svg # H monogram for browser tabs and bookmarks
+apple_touch_icon: apple-touch-icon-h.png # Matching 180x180 home-screen icon
 
 url: https://hajunhyun.github.io
 repository: HaJunHyun/HaJunHyun.github.io

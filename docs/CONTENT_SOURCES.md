@@ -1,6 +1,7 @@
 # Profile and PReFlow content sources
 
 Verified on October 1, 2026.
+Publication metadata and the coauthor homepage link reverified on October 2, 2026.
 
 ## Profile
 
@@ -14,11 +15,13 @@ Verified on October 1, 2026.
 ## Publication and explainer
 
 - [arXiv abstract](https://arxiv.org/abs/2609.36812)
+- [Version 2 author metadata](https://arxiv.org/html/2609.36812v2): Junhyun Ha, Juho Lee, and Byoungwoo Park; the title and author order are unchanged.
+- [Byoungwoo Park](https://bw-park.github.io/): coauthor homepage, also linked from [SIML people](https://siml.kaist.ac.kr/people/).
 - [Version 1 PDF](https://arxiv.org/pdf/2609.36812v1)
 - [Version 1 source](https://arxiv.org/src/2609.36812v1)
 - Paper license: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 - Publication status: arXiv preprint.
-- Author order and spelling follow the paper: Junhyun Ha, Juho Lee, Byungwoo Park.
+- Author order and spelling follow v2: Junhyun Ha, Juho Lee, Byoungwoo Park.
 - The explainer is original prose based on v1. Equations follow Sections 2 and 3; results follow Section 5, Tables 1, 2, and 6, and Appendices D and E.
 - The ideal joint optimum and the practical greedy-selection approximation are distinguished.
 - Aggregate benchmark results use eight seeds for PReFlow; the displayed learning curves use three.

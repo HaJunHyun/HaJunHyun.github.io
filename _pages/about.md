@@ -29,3 +29,6 @@ I am a member of the [SIML](https://siml.kaist.ac.kr/) lab. Before joining KAIST
 
 My research focuses on **reinforcement learning and policy improvement**.
 I am interested in how agents can improve their behavior through data and interaction, and how exploration and learned representations can support this process.
+
+A question that motivates my research is how agents can decide what to explore next and make the most of the experience they collect.
+Ultimately, I aim to develop learning algorithms that turn limited interaction into reliable improvements in behavior.
